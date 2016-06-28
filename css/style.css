@@ -12,3 +12,14 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+#index-banner {
+  min-height: 750px;
+  background: url(../media/ship-wheel-profile.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+footer.page-footer {
+  margin-top: 0;
+}

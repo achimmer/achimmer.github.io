@@ -5,6 +5,9 @@
  *
  * Made By MaterializeCSS.com
  */
+html, body {
+  font-family: 'Work Sans', sans-serif;
+}
 
 .icon-block {
   padding: 0 15px;
@@ -13,12 +16,22 @@
 	font-size: inherit;
 }
 #index-banner {
-  min-height: 750px;
-  background: url(../media/ship-wheel-profile.jpg) no-repeat top center fixed;
-  -webkit-background-size: cover;
+  color:rgba(195, 55, 0, 0.75);
+  min-height: 15rem;
+  /*background: url(../media/ship-wheel-profile.jpg) no-repeat top center fixed;*/
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
+}
+#index-banner h1 {
+  margin-bottom: .25rem;
+  text-shadow: 1px 1px 3px rgba(50, 50, 50, 0.15);
+  font-weight: bold;
+}
+#index-banner .sub-header {
+  margin-top: .25rem;
+  margin-bottom: 4rem;
 }
 footer.page-footer {
   margin-top: 0;

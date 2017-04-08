@@ -19,6 +19,12 @@ html, body {
   padding-top:2.5rem;
   padding-bottom:2.5rem;
 }
+@media only screen and (min-width: 981px) {
+header[role="banner"] .logo svg, header[role="banner"] .logo img {
+  width: 50px;
+  height: 50px;
+}
+
 #index-banner {
   color:rgba(195, 55, 0, 0.75);
   min-height: 15rem;
@@ -28,13 +34,21 @@ html, body {
   -o-background-size: cover;
   background-size: cover;*/
 }
-#index-banner h1 {
-  margin-bottom: .25rem;
-  /*text-shadow: 1px 1px 3px rgba(50, 50, 50, 0.15);*/
-  font-weight: bold;
+.brand-logo .logo-name h1, .brand-logo .logo-name h2 {
+  margin: 0.75rem 0 0 0;
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color:rgba(255,255,255,0.75);
+}
+.brand-logo .logo-name h2 {
+  margin: 0.25rem 0 0 0;
+  font-size: 1rem;
+  color:rgba(255,255,255,0.5);
+  font-weight: 300;
 }
 #index-banner .sub-header {
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   margin-bottom: 4rem;
 }
 .test-section {
@@ -42,4 +56,9 @@ html, body {
 }
 footer.page-footer {
   margin-top: 0;
+}
+footer.page-footer .copyright {
+  display: block;
+  padding-bottom: 2rem;
+  text-align: center;
 }

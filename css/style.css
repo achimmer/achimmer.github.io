@@ -15,11 +15,11 @@ html, body {
   padding-top: 5px;
   max-height: 45px;
   filter: invert(100%);
-  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
 }
 .brand-logo:hover  img {
   opacity:0.7;
-  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
 }
 
 .icon-block {
@@ -151,7 +151,13 @@ html, body {
   transform: translateY(-50%);
   -webkit-transition: background-color .3s ease;
   transition: background-color .3s ease;
+  transition: height .3s ease;
+
   /* cursor: pointer; */
+}
+.skills-graph .percentage:hover:after {
+  height: 65%;
+  transition: height .3s ease;
 }
 .skills-graph .percentage-90:after {
   width: 90%;
@@ -162,12 +168,18 @@ html, body {
 .skills-graph .percentage-70:after {
   width: 70%;
 }
-.tools img {
+.tools a img {
   max-width: 100px;
   margin: 0 auto;
   display: block;
   filter: grayscale(90%);
   opacity: 0.6;
+  transition: opacity .3s ease;
+}
+.tools a:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transition: opacity .3s ease;
 }
 
 .page-footer {

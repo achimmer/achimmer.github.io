@@ -6,7 +6,20 @@
  * Made By MaterializeCSS.com
  */
 html, body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.section {
+  padding:3rem 0;
+}
+.brand-logo  img {
+  padding-top: 5px;
+  max-height: 45px;
+  filter: invert(100%);
+  -webkit-transition: opacity .3s ease;
+}
+.brand-logo:hover  img {
+  opacity:0.7;
+  -webkit-transition: opacity .3s ease;
 }
 
 .icon-block {
@@ -15,50 +28,165 @@ html, body {
 .icon-block .material-icons {
 	font-size: inherit;
 }
-.section {
-  padding-top:2.5rem;
-  padding-bottom:2.5rem;
+.red.lighten-1 {
+  background-color: #e54f4f!important;
 }
-@media only screen and (min-width: 981px) {
-header[role="banner"] .logo svg, header[role="banner"] .logo img {
-  width: 50px;
-  height: 50px;
+.m-t-0-25 {
+  margin-top: 0.25rem;
+}
+.m-t-1{
+  margin-top: 1rem;
+}
+.m-b-3 {
+  margin-bottom: 3rem;
+}
+.p-tb-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
-#index-banner {
-  color:rgba(195, 55, 0, 0.75);
-  min-height: 15rem;
-  /*background: url(../media/ship-wheel-profile.jpg) no-repeat top center fixed;*/
-  /*-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
+.font-0-75 {
+  font-size: 0.75rem;
 }
-.brand-logo .logo-name h1, .brand-logo .logo-name h2 {
-  margin: 0.75rem 0 0 0;
-  font-size: 1.5rem;
-  line-height: 1.25rem;
-  font-weight: 400;
-  color:rgba(255,255,255,0.75);
+.font-1-25{
+  font-size: 1.25rem;
 }
-.brand-logo .logo-name h2 {
-  margin: 0.25rem 0 0 0;
-  font-size: 1rem;
-  color:rgba(255,255,255,0.5);
+.font-2 {
+  font-size: 2rem;
+}
+.font-3 {
+  font-size: 3rem;
+}
+.font-thin {
+  font-weight: 200;
+}
+.font-regular {
   font-weight: 300;
 }
-#index-banner .sub-header {
-  margin-top: 0.25rem;
-  margin-bottom: 4rem;
+.font-bolder {
+  font-weight: 600;
 }
-.test-section {
-  color: rgba(0, 0, 0, 0.5);
+
+.index-header {
+  color:rgba(245,245,245,0.9);
+  font-size: 1.5rem;
+  font-weight: 200;
+  min-height: 15rem;
 }
-footer.page-footer {
+.index-header h1 {
+  font-weight: 800;
+  color:rgba(30,30,30,0.6);
+  text-transform: uppercase;
+  letter-spacing:0.25em;
+}
+.index-header p {
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  width: 31rem;
+  font-size: 1.75rem;
+}
+.index-header p:first-of-type {
+  margin-top: 2.25rem;
+}
+.skill.countup {
+  font-weight: 700;
+  margin-left: 1em;
+}
+.skills-graph {}
+.skills-graph dl {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  max-width: 90%;
+  position: relative;
+  padding: 20px;
+}
+
+.skills-graph dt {
+  align-self: flex-start;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-left: 7%;
+}
+
+.skills-graph .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 2rem;
+  width: 90px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.skills-graph .percentage {
+  font-size: 1.25rem;
+  line-height: 1;
+  width: 100%;
+  height: 2rem;
+  margin-left: 90px;
+  margin-top: 3rem;
+}
+.skills-graph .percentage:first-of-type {
   margin-top: 0;
 }
-footer.page-footer .copyright {
+.skills-graph .percentage:after {
+  content: "";
   display: block;
-  padding-bottom: 2rem;
+  background-color: #e54f4f;
+  width: 50px;
+  margin-bottom: 10px;
+  height: 35%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  /* cursor: pointer; */
+}
+.skills-graph .percentage-90:after {
+  width: 90%;
+}
+.skills-graph .percentage-80:after {
+  width: 80%;
+}
+.skills-graph .percentage-70:after {
+  width: 70%;
+}
+.tools img {
+  max-width: 100px;
+  margin: 0 auto;
+  display: block;
+  filter: grayscale(90%);
+  opacity: 0.6;
+}
+
+.page-footer {
+  padding-top: 5rem;
+}
+.page-footer .logo img {
+  max-height: 4rem;
+  opacity: 0.25;
+}
+.page-footer .logo p:first-of-type {
+  margin-top:0.75rem;
+}
+.page-footer .logo p {
+  margin: 0.25em 0;
+  color:rgba(0,0,0,0.35);
+}
+.page-footer .footer-copyright {
+  background:none;
+  color:#a6a6a6;
   text-align: center;
+  font-size: 0.75rem;
 }

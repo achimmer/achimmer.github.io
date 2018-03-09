@@ -3,58 +3,144 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Andrew Himmer gitHub repo</title>
+  <title>Andrew Himmer</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald|Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,700,700i,800,900" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-
-<body class="blue-grey darken-3">
-
-  <nav class="navbar deep-orange darken-3" role="navigation">
-    <div class="nav-wrapper container">
-      <a href="#" class="brand-logo">
-        <div class="logo-name"><h1>Andrew Himmer</h1><h2>Front-end Developer</h2></div>
-      </a>
+<body>
+  <nav class="red lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo invert-white">
+      <img src="media/ah-logo.png" />
+    </a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="worries.html">option 1</a></li>
-        <li><a href="goals.html">option 2</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="worries.html">option 1</a></li>
-        <li><a href="goals.html">option 2</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
   <main>
-    <div class="section no-pad-bot deep-orange lighten-2" id="index-banner">
+    <header class="section index-header red lighten-1">
       <div class="container">
-        <br><br>
-        <div class="row center">
-          <h2>keeping things simple</h2>
-        </div>
-        <br><br>
+        <h1 class="center-align">Andrew <span>=</span></h1>
+        <p class=""><span class="skill countup"><i class="material-icons">code</i> 70%</span> part front end developer</p>
+        <p class=""><span class="skill countup"><i class="material-icons">brush</i> 30%</span> part web designer</p>
+
+        <!-- <div class="row">
+          <div class="col s12 m12 l6">
+            <h1>Andrew <span>=</span></h1>
+          </div>
+          <div class="col s6 m6 l3 ">
+            <p>part front end developer</p>
+            <p>part web designer</p>
+          </div>
+          <div class="col s6 m6 l3">
+            <p class="skill countup"><i class="material-icons">code</i> 70%</p>
+            <p class="skill countup"><i class="material-icons">brush</i> 30%</p>
+          </div>
+        </div> -->
       </div>
-    </div>
-    <section class="section white test-section">
+    </header>
+
+    <section class="section p-tb-6">
       <div class="container">
-        <h1>Title something</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="center grey-text text-darken-3 font-regular">I make simple yet stylish websites</h2>
+        <h3 class="center font-2 grey-text text-darken-3 font-thin">and I restore old websites and make them great again.</h3>
       </div>
     </section>
-  </main>
 
-  <footer class="page-footer blue-grey darken-3">
+    <section class="section skills-graph">
+      <div class="container">
+        <dl>
+          <dt>
+            <h3 class="m-b-3 center font-3 grey-text text-darken-3 font-thin">Front end development skills</h3
+          </dt>
+          <dd class="percentage percentage-90"><span class="text">HTML</span></dd>
+          <dd class="percentage percentage-80"><span class="text">CSS</span></dd>
+          <dd class="percentage percentage-70"><span class="text">Javascript</span></dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <h2 class="m-b-3 center font-3 grey-text text-darken-3 font-thin">Recent projects</h2>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="media/wireframe.jpg" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="media/wireframe.jpg" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="media/wireframe.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section tools">
+      <div class="container">
+        <h2 class="m-b-3 center font-3 grey-text text-darken-3 font-thin">Tools I sometimes use</h2>
+        <ul class="row valign-wrapper">
+          <li class="col s12 m4">
+            <img src="media/bootstrap.png" />
+          </li>
+          <li class="col s12 m4">
+            <img src="media/materialize.png" />
+          </li>
+          <li class="col s12 m4">
+            <img src="media/wordpress.png" />
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+  <footer class="page-footer white grey-text text-darken-3">
     <div class="container">
-      <small class="copyright grey-text text-lighten-2">Content is copyright © 2016 Andrew Himmer Projects and licensed under <a href="https://opensource.org/licenses/mit-license.php" title="MIT License" >MIT</a>.</small>
+      <div class="row logo">
+        <div class="col ">
+          <img src="media/ah-logo.png" />
+        </div>
+        <div class="col l6 s12 ">
+          <p class="font-1-25">Andrew Himmer</p>
+          <p class="font-0-75">front end developer / web designer</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; All Rights Reserved.
+      </div>
     </div>
   </footer>
+
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

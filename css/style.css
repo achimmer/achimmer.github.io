@@ -79,6 +79,10 @@ html, body {
   font-weight: 600;
 }
 
+.green.accent-6 {
+  background:##01bf83;
+}
+
 .index-header {
   color:rgba(245,245,245,0.9);
   font-size: 1.5rem;

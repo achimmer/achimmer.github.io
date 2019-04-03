@@ -198,6 +198,10 @@ html, body {
   transition: opacity .3s ease;
 }
 
+.twitter-feed.container {
+  max-width: 600px;
+}
+
 .page-footer {
   padding-top: 5rem;
 }

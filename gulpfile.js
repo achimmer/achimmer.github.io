@@ -11,13 +11,13 @@ var cleanCSS = require('gulp-clean-css');
 var purgecss = require('gulp-purgecss');
 
 // js file paths
-var utilJsPath = 'assets/js'; // util.js path - you may need to update this if including the framework as external node module
-var componentsJsPath = 'assets/js/components/*.js'; // component js files
-var scriptsJsPath = 'assets/js'; //folder for final scripts.js/scripts.min.js files
+var utilJsPath = 'main/assets/js'; // util.js path - you may need to update this if including the framework as external node module
+var componentsJsPath = 'main/assets/js/components/*.js'; // component js files
+var scriptsJsPath = 'main/assets/js'; //folder for final scripts.js/scripts.min.js files
 
 // css file paths
-var cssFolder = 'assets/css'; // folder for final style.css/style-custom-prop-fallbac.css files
-var scssFilesPath = 'assets/css/**/*.scss'; // scss files to watch
+var cssFolder = 'main/assets/css'; // folder for final style.css/style-custom-prop-fallbac.css files
+var scssFilesPath = 'main/assets/css/**/*.scss'; // scss files to watch
 
 function reload(done) {
   browserSync.reload();
@@ -61,16 +61,16 @@ gulp.task('scripts', function() {
 gulp.task('browserSync', gulp.series(function (done) {
   browserSync.init({
     server: {
-      baseDir: './'
+      baseDir: 'main'
     },
     notify: false
   })
   done();
 }));
 
-gulp.task('watch', gulp.series(['sass', 'scripts'], function () {
-  gulp.watch('*.html', gulp.series(reload));
-  gulp.watch('assets/css/**/*.scss', gulp.series(['sass']));
+gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], function () {
+  gulp.watch('main/*.html', gulp.series(reload));
+  gulp.watch('main/assets/css/**/*.scss', gulp.series(['sass']));
   gulp.watch(componentsJsPath, gulp.series(['scripts']));
 }));
 
@@ -98,7 +98,7 @@ function purgeCSS() {
   return new Promise(function(resolve, reject) {
     var stream = gulp.src(cssFolder+'/style.css')
     .pipe(purgecss({
-      content: ['*.html', scriptsJsPath+'/scripts.js'],
+      content: ['main/*.html', scriptsJsPath+'/scripts.js'],
       safelist: {
         standard: ['.is-hidden', '.is-visible'],
         deep: [/class$/],
@@ -139,7 +139,7 @@ function moveJS() {
 
 function moveAssets() {
   return new Promise(function(resolve, reject) {
-    var stream = gulp.src(['assets/img/**'], { allowEmpty: true })
+    var stream = gulp.src(['main/assets/img/**'], { allowEmpty: true })
     .pipe(gulp.dest(assetsFolder+'img'));
     
     stream.on('finish', function() {
@@ -150,7 +150,7 @@ function moveAssets() {
 
 function moveContent() {
   return new Promise(function(resolve, reject) {
-    var stream = gulp.src('*.html')
+    var stream = gulp.src('main/*.html')
     .pipe(gulp.dest(distFolder));
     
     stream.on('finish', function() {

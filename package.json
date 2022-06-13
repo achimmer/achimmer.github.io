@@ -1,54 +1,8 @@
 {
-  "_from": "codyhouse-framework",
-  "_id": "codyhouse-framework@3.0.5",
-  "_inBundle": false,
-  "_integrity": "sha512-GAUTkWAkcGd/YK4zTH1E7qL3AkerXPPNxyNYRcl31LgQP0xF+aqfpRX08VlpXrDLZZ2J+g41kdJDjMyBQBpeKA==",
-  "_location": "/codyhouse-framework",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "codyhouse-framework",
-    "name": "codyhouse-framework",
-    "escapedName": "codyhouse-framework",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/codyhouse-framework/-/codyhouse-framework-3.0.5.tgz",
-  "_shasum": "5a0bf2db0c1535887c1eeaa1e29c44fce3749d70",
-  "_spec": "codyhouse-framework",
-  "_where": "/Users/andrew.himmer/Documents/Projects/achimmer.github.io",
-  "author": {
-    "name": "Amber Creative Lab",
-    "email": "info@ambercreative.co"
-  },
-  "bugs": {
-    "url": "https://github.com/CodyHouse/codyhouse-framework/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "name": "codyhouse-framework",
+  "version": "3.0.5",
   "description": "A lightweight front-end framework for building accessible, bespoke interfaces.",
-  "devDependencies": {
-    "autoprefixer": "^9.4.3",
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-purgecss": "^3.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-sass-glob": "git+https://github.com/CodyHouse/gulp-sass-glob.git",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.37.5",
-    "sass-embedded": "^1.52.3"
-  },
-  "homepage": "https://codyhouse.co",
+  "main": "index.js",
   "keywords": [
     "scss",
     "css",
@@ -65,16 +19,30 @@
     "typography",
     "codyhouse"
   ],
-  "license": "MIT",
-  "main": "index.js",
-  "name": "codyhouse-framework",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CodyHouse/codyhouse-framework.git"
-  },
   "scripts": {
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "3.0.5"
+  "author": "Amber Creative Lab <info@ambercreative.co>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-purgecss": "^3.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sass-glob": "git+https://github.com/CodyHouse/gulp-sass-glob",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.37.5",
+    "sass-embedded": "^1.0.0-beta.4"
+  },
+  "homepage": "https://codyhouse.co",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodyHouse/codyhouse-framework.git"
+  }
 }

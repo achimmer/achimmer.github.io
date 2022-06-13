@@ -8,7 +8,7 @@
 
 :root {
   // font family
-  --font-primary: system-ui, sans-serif;
+  --font-primary: Nunito Sans, system-ui, sans-serif;
 
   // font size
   --text-base-size: 1rem; // body font-size
@@ -37,6 +37,7 @@
   --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
 }
 
+
 @include breakpoint(md) {
   :root {
     --text-base-size: 1.25rem;
@@ -44,9 +45,24 @@
   }
 }
 
+body {
+  font-family: var(--font-primary);
+}
+
 h1, h2, h3, h4 {
+  font-family: var(--font-primary);
   --heading-font-weight: 700;
 }
+
+// font family
+.font-primary { font-family: var(--font-primary); }
+
+// color
+.color-cream-darker { color: alpha(var(--color-cream-darker), var(--color-o, 1)); }
+.color-cream-dark { color: alpha(var(--color-cream-dark), var(--color-o, 1)); }
+.color-cream { color: alpha(var(--color-cream), var(--color-o, 1)); }
+.color-cream-light { color: alpha(var(--color-cream-light), var(--color-o, 1)); }
+.color-cream-lighter { color: alpha(var(--color-cream-lighter), var(--color-o, 1)); }
 
 // --------------------------------
 

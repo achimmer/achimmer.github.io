@@ -17,3 +17,12 @@
   // 👇 include the font-family declaration here if you are using an icon font
   // font-family: 'fontName';
 }
+
+.circle {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+  border:1vh;
+  aspect-ratio: 1 / 1; 
+}

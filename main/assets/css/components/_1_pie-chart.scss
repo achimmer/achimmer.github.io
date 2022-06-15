@@ -10,14 +10,14 @@ Usage: codyhouse.co/license
 -------------------------------- */
 
 :root {
-  --pie-chart-size: 200px;
-  --pie-chart-gap: 2px; // gap among subdivisions
+  --pie-chart-size: 180px;
+  --pie-chart-gap: 5px; // gap among subdivisions
 
   // legend bullet point
   --pie-chart-legend-bullet-size: 10px; // height and width of legend dot indicator
 
   // donut chart
-  --pie-chart-donut-width: 30px;// donut stroke width - value in px
+  --pie-chart-donut-width: 35px;// donut stroke width - value in px
 }
 
 .pie-chart {}

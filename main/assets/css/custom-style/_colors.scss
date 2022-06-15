@@ -52,18 +52,24 @@
   @include defineColorHSL(--color-error-lighter, 6, 77%, 76%);
 
   // background
-  @include defineColorHSL(--color-bg-darker, 0, 0%, 91%);
-  @include defineColorHSL(--color-bg-dark, 0, 0%, 95%);
-  @include defineColorHSL(--color-bg, 0, 0%, 100%);
-  @include defineColorHSL(--color-bg-light, 0, 0%, 100%);
-  @include defineColorHSL(--color-bg-lighter, 0, 0%, 100%);
+  @include defineColorHSL(--color-bg-darker, 60, 2%, 88%);
+  @include defineColorHSL(--color-bg-dark, 30, 4%, 91%);
+  @include defineColorHSL(--color-bg, 30, 10%, 96%);
+  @include defineColorHSL(--color-bg-light, 30, 4%, 100%);
+  @include defineColorHSL(--color-bg-lighter, 60, 2%, 100%);
 
   // color contrasts
-  @include defineColorHSL(--color-contrast-lower, 0, 0%, 96%);
-  @include defineColorHSL(--color-contrast-low, 0, 0%, 85%);
-  @include defineColorHSL(--color-contrast-medium, 0, 0%, 53%);
-  @include defineColorHSL(--color-contrast-high, 0, 0%, 27%);
+  @include defineColorHSL(--color-contrast-lower, 30, 2%, 84%);
+  @include defineColorHSL(--color-contrast-low, 60, 1%, 67%);
+  @include defineColorHSL(--color-contrast-medium, 60, 0%, 52%);
+  @include defineColorHSL(--color-contrast-high, 0, 0%, 32%);
   @include defineColorHSL(--color-contrast-higher, 0, 0%, 20%);
+}
+
+body, [data-theme="default"] {
+  // font rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @supports(--css: variables) {

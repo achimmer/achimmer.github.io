@@ -1,0 +1,38 @@
+@use '../base' as *;
+
+/* -------------------------------- 
+
+File#: _1_background-decoration
+Title: Background Decoration
+Descr: A collection of background effects
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.bg-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-decoration__svg {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  transform: translateX(12%);
+  width: 100%;
+  min-width: 380px;
+  max-width: 520px;
+  height: auto;
+  &.img-mobile-ui {
+    min-width: 180px;
+    max-width: 300px;
+    right: 30%;
+    top: 18%;
+  }
+
+}
